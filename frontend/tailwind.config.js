@@ -17,6 +17,15 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily:{
+        'shadow': 'Shadow Into Light',
+        'imbue': 'Imbue',
+        'caveat': 'Caveat',
+      },
+      backgroundImage:{
+        'hero-pattern': "url('https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706283290608-n4hq7k')",
+        'hero-pattern-2': "url('https://portfolio-image-store.s3.ap-south-1.amazonaws.com/portfolio3/1711525564606-1j950d.webp')"
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -73,5 +82,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate")]
 }
