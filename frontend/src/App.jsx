@@ -13,8 +13,8 @@ function App() {
       <Aurora />
       <Header />
       <Hero />
-      <Services/>
       <About />
+      <Services/>
     </>
   )
 }
