@@ -4,6 +4,7 @@ import Aurora from "./components/Aurora"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Services from "./components/Services"
+import Skills from "./components/Skills"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <About />
       <Services/>
+      <Skills/>
     </>
   )
 }
