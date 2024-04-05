@@ -10,15 +10,7 @@ export default function Services() {
     const imageUrl = 'https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706283290608-n4hq7k';
     const imageClassName = 'w-[250px] sm:w-[400px] sm:h-[500px] rounded-lg border-none transition-transform duration-1000 rotate-y-180';
     const [service, setService] = useState(null);
-    useEffect(() => {
-        animate(color, colors, {
-            ease: "easeInOut",
-            duration: 10,
-            repeat: Infinity,
-            repeatType: "mirror",
-        });
-    }, []);
-    
+   
     useEffect(() => {
         const fetchPosts = async () => {
             try {
@@ -36,6 +28,12 @@ export default function Services() {
             }
         };
         fetchPosts();
+        animate(color, colors, {
+            ease: "easeInOut",
+            duration: 10,
+            repeat: Infinity,
+            repeatType: "mirror",
+        });
     }, []);
     
 
