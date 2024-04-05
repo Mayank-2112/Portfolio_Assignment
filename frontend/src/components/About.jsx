@@ -1,53 +1,12 @@
-// import React, { useEffect } from 'react'
-// import { animate, motion, useMotionTemplate, useMotionValue } from 'framer-motion';
-// import { DirectionAwareHover } from '@/components/ui/direction-aware-hover.jsx';
-// export default function About() {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     <DirectionAwareHover
-//      imageUrl={imageUrl}>
-//         <p className="font-bold text-xl">John Doe</p>
-//         <p className="font-normal text-sm">As a React developer with 5 years of experience, I have honed my skills in JavaScript and am currently learning TypeScript to expand my expertise. I pride myself on being a quick learner and attentive listener, which allows me to collaborate effectively with clients to create efficient and scalable solutions. My focus is on developing user-friendly applications that solve real-world problems.</p>
-//       </DirectionAwareHover>
-//         </motion.div>
-//     </div>
-//   )
-// }
 import React, { useEffect, useState } from "react";
 import { CardBody, CardContainer, CardItem } from '@/components/ui/3d-card.jsx';
 import { motion, animate, useMotionTemplate, useMotionValue } from "framer-motion";
-const colors = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 export default function About() {
+  const colors = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
   const color = useMotionValue(colors[0]);
   const border = useMotionTemplate`1px solid ${color}`;
   const box_shadow = useMotionTemplate`0px 4px 24px ${color}`;
-  useEffect(() => {
-    animate(color, colors, {
-      ease: "easeInOut",
-      duration: 10,
-      repeat: Infinity,
-      repeatType: "mirror",
-    });
-  }, []);
+  
   const [about, setAbout] = useState(null);
   useEffect(() => {
     const fetchAbout = async () => {
@@ -65,6 +24,13 @@ export default function About() {
       }
     };
     fetchAbout();
+
+    animate(color, colors, {
+      ease: "easeInOut",
+      duration: 10,
+      repeat: Infinity,
+      repeatType: "mirror",
+    });
   }, []);
 
   return (

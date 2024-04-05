@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
         <motion.div initial={{y:-100}} animate={{y:0}} transition={{duration: 1 , ease:'easeIn'}}
-        className="text-white flex justify-between md:justify-around items-center pt-3 font-caveat px-5 sticky top-0">
+        className="text-white flex justify-between md:justify-around items-center pt-3 font-caveat px-5 sticky top-0 z-50">
             <h1 className="text-2xl sm:text-5xl font-bold">Portfolio.</h1>
             <div className="hidden lg:inline">
             <ul className=" flex-row flex gap-10 items-center text-2xl">
@@ -22,6 +22,7 @@ export default function Header() {
                 <li className="hover:border-b-2 font-semibold">Experience</li>
                 <li className="hover:border-b-2 font-semibold">Skills</li>
                 <li className="hover:border-b-2 font-semibold">Projects</li>
+                <li className="hover:border-b-2 font-semibold">Testimonials</li>
                 <li className="hover:border-b-2 font-semibold">Contact</li>
             </ul>
             </div>
@@ -46,6 +47,7 @@ export default function Header() {
                 <li className="font-semibold">Experience</li>
                 <li className="font-semibold">Skills</li>
                 <li className="font-semibold">Projects</li>
+                <li className="font-semibold">Testimonials</li>
                 <li className="font-semibold">Contact</li>
             </ul>
             <div className='flex gap-2'>

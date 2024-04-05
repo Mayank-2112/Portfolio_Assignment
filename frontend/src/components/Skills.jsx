@@ -49,11 +49,11 @@ export default function Skills() {
 
                     <PinContainer
                     title={skill.name}
-                    style={{boxShadow: box_shadow}}
                     >
-                    <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+                    <div  
+                    className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[15rem] h-[15rem] ">
                         
-                        <div className="flex flex-1 w-full rounded-lg mt-4">
+                        <div className="flex flex-1 w-full rounded-lg mt-4" >
                             <img src={skill.image.url} alt="" />
                         </div>
                     </div>
